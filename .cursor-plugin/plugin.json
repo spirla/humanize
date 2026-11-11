@@ -1,6 +1,6 @@
 {
   "name": "humanizer",
-  "description": "Reescreve prosa em português brasileiro na voz do autor e preserva o sentido do texto.",
+  "description": "Corrige a prosa em português brasileiro com a menor alteração que resolva o problema por completo.",
   "version": "4.0.0",
   "author": {
     "name": "blader"

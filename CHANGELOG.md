@@ -2,7 +2,7 @@
 
 ## 4.0.0
 
-**Edição PT-BR do fork.** Traduz a skill e a documentação de uso, adapta os 26 padrões com exemplos brasileiros e integra a releitura de prosa às quatro etapas. A versão corresponde à base v4.0.0 de blader.
+**Edição PT-BR do fork.** Traduz a skill e a documentação de uso, adapta os 26 padrões com exemplos brasileiros e integra às quatro etapas a menor intervenção necessária à correção completa e a proteção dos termos técnicos e jurídicos do contexto. A versão corresponde à base v4.0.0 de blader.
 
 - The skill no longer forbids adding facts. Where the text is generic, it now adds a specific detail it knows to be true. It still keeps every claim the original made and treats a lost or changed claim as an error. This reverses the no-invention rule from 2.9.0. Patterns 14 and 17 follow the same change.
 - Reworked 15 "After" examples in `SKILL.md` and both README examples. Several were vaguer or stiffer than the text they replaced, used phrases from the skill's own watch lists, or changed a stated fact.

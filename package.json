@@ -1,7 +1,7 @@
 {
   "name": "humanizer",
   "private": true,
-  "description": "Reescreve prosa em português brasileiro na voz do autor e preserva o sentido do texto.",
+  "description": "Corrige a prosa em português brasileiro com a menor alteração que resolva o problema por completo.",
   "license": "MIT",
   "repository": "github:spirla/humanize",
   "keywords": ["pi-package"],

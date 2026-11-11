@@ -1,16 +1,16 @@
 # Humanizer em português brasileiro
 
-O Humanizer revisa prosa em PT-BR na voz do autor. Ele corrige construções repetitivas, excessos de ênfase e marcas de conversa com um chatbot. A revisão preserva o sentido do texto, incluindo fatos, termos técnicos e ressalvas que delimitam uma afirmação.
+O Humanizer corrige prosa em português brasileiro com a menor alteração que resolva o problema por completo. Preserva a redação que já funciona, a voz do autor e o sentido do texto. Os termos técnicos e jurídicos específicos do contexto permanecem na forma original.
 
 Este fork adapta a [versão v4.0.0 do Humanizer de blader](https://github.com/blader/humanizer/releases/tag/v4.0.0). A skill usa 26 padrões de revisão. Eles ajudam a editar prosa e não servem para identificar a autoria de um texto.
 
 **Antes**
 
-> Vamos direto ao ponto. A inscrição para a oficina não é só fácil. É simples de verdade. O formulário tem dois campos e fica aberto até sexta-feira, às 18h. Essa facilidade faz toda a diferença.
+> Vamos direto ao ponto. O formulário tem dois campos e fica aberto até sexta-feira, às 18h. Essa facilidade faz toda a diferença.
 
 **Depois**
 
-> Para se inscrever na oficina, preencha os dois campos do formulário até sexta-feira, às 18h.
+> O formulário tem dois campos e fica aberto até sexta-feira, às 18h.
 
 ## Instalação
 
@@ -67,10 +67,10 @@ Para calibrar a voz, forneça dois ou três parágrafos de sua autoria e indique
 
 ## Como funciona
 
-1. **Marcar.** Ler a unidade e seu contexto, identificar o gênero e o leitor, e localizar os padrões mais fortes e as repetições que aparecem em sequência.
-2. **Redigir.** Reescrever pela relação entre as ideias. Conservar a frase ou ressalva que, ao sair, faria perder uma razão, um limite ou uma consequência.
-3. **Conferir.** Comparar o rascunho com a entrada e reler os parágrafos em sequência. Conferir a fidelidade, a voz e eventuais repetições introduzidas pela edição.
-4. **Entregar.** Resolver os problemas que restaram e seguir o formato de saída pedido.
+1. **Marcar.** Ler a unidade e seu contexto. Localizar os defeitos, as repetições em sequência e os termos técnicos e jurídicos que precisam ficar intactos.
+2. **Corrigir.** Começar pela menor alteração que resolva o defeito. Ampliar a edição se a correção pontual for insuficiente.
+3. **Conferir.** Reler as frases e as aberturas de parágrafo em sequência. Checar se o defeito foi resolvido, se os termos foram preservados e se alguma alteração pode ser revertida.
+4. **Entregar.** Aplicar a mesma regra aos problemas que restaram e seguir o formato de saída pedido.
 
 ## Os 26 padrões
 
@@ -91,7 +91,7 @@ Os primeiros cinco justificam edição quando a ocorrência cumpre a função de
 | # | Padrão | O que fazer |
 |---|---|---|
 | 6 | **Tríades forçadas** | Usar o número de itens que o conteúdo pede. |
-| 7 | **Aberturas repetidas** | Reconstruir a sequência pela ação, condição ou consequência. |
+| 7 | **Aberturas repetidas** | Ajustar apenas as aberturas em que a repetição atrapalha a leitura. |
 | 8 | **Travessões como conector universal** | Expressar a relação entre as ideias e preservar a pontuação funcional. |
 | 9 | **Qualificadores empilhados** | Expressar uma vez o grau de certeza sustentado pela fonte. |
 | 10 | **Hífens em pares artificiais** | Usar a locução natural em português e preservar a grafia dos termos. |
@@ -132,17 +132,19 @@ Os primeiros cinco justificam edição quando a ocorrência cumpre a função de
 |---|---|---|
 | 26 | **Reexplicação do que o leitor já sabe** | Em uma resposta, apresentar a decisão e conservar o contexto necessário. |
 
-## Exemplo completo
+## Exemplo com termo jurídico
 
 **Antes**
 
-> A leitura dos formulários merece atenção. Os formulários do turno da manhã registraram seis atrasos. Os formulários do turno da tarde registraram dois atrasos. É possível que esses números talvez indiquem uma diferença entre os turnos. Essa distinção é fundamental.
+> Vale destacar que a exceção de pré-executividade foi juntada na terça-feira.
 >
-> Vale ressaltar que a amostra é de uma única semana e que esses dados não permitem atribuir os atrasos ao turno.
+> A parte contrária se manifestou na sexta-feira.
 
 **Depois**
 
-> Os formulários de uma semana registraram seis atrasos no turno da manhã e dois no da tarde. A amostra não permite atribuir os atrasos ao turno.
+> A exceção de pré-executividade foi juntada na terça-feira.
+>
+> A parte contrária se manifestou na sexta-feira.
 
 ## Fontes e licença
 

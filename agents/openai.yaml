@@ -1,4 +1,4 @@
 interface:
   display_name: "Humanizer em PT-BR"
-  short_description: "Revise prosa em PT-BR na voz do autor"
-  default_prompt: "Use $humanizer para revisar este texto em português brasileiro na minha voz e preservar o sentido."
+  short_description: "Corrija prosa em PT-BR com intervenção mínima"
+  default_prompt: "Use $humanizer para corrigir este texto com a menor alteração necessária e preservar minha voz e os termos técnicos e jurídicos."
