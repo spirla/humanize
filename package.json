@@ -1,9 +1,9 @@
 {
   "name": "humanizer",
   "private": true,
-  "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.",
+  "description": "Reescreve prosa em português brasileiro na voz do autor e preserva o sentido do texto.",
   "license": "MIT",
-  "repository": "github:blader/humanizer",
+  "repository": "github:spirla/humanize",
   "keywords": ["pi-package"],
   "pi": {
     "skills": ["./"]
