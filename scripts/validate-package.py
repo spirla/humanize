@@ -123,8 +123,9 @@ renamed = [
 ]
 if renamed:
     raise SystemExit("Match the README pattern names to SKILL.md: " + "; ".join(renamed))
-if f"## The {pattern_count} patterns" not in README:
-    raise SystemExit(f"Title the README pattern section 'The {pattern_count} patterns'")
+pattern_heading = f"Os {pattern_count} padrões"
+if f"## {pattern_heading}" not in README:
+    raise SystemExit(f"Title the README pattern section '{pattern_heading}'")
 
 # A renumber can leave a section reference pointing at the wrong pattern or at
 # nothing. CHANGELOG.md keeps the numbers each release used, so read SKILL.md only.
