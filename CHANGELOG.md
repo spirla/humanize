@@ -1,5 +1,19 @@
 # Changelog
 
+## 4.1.0
+
+**Regras unificadas e etapa final.** A skill reúne num só catálogo as regras de prosa que antes ficavam espalhadas em guias de gênero e passa a servir de etapa final de todo texto entregue como produto de um projeto. O catálogo vai de 26 para 30 padrões.
+
+- Quatro padrões novos: camada explicativa inócua (§6), frase que não diz o fato (§7), período travado (§14) e referência sem objeto (§30).
+- Padrões ampliados: §1 cobre a negação que só insinua; §3, a frase-síntese abstrata na borda do parágrafo; §5, a ressalva defensiva e a concessão sem função; §9, a série de artigo e substantivo e os parágrafos uniformes; §17, o falso condicional; §28, o bastidor da produção.
+- Padrões renomeados: §10 é “Travessões e dois-pontos retóricos”; §21, “Fórmulas longas e palavras rebuscadas”; §27, “Primeira frase presa ao título”, que agora cobre também a abertura que só se entende com o título.
+- §10 ganha a régua: mais de um travessão ou dois-pontos retórico a cada três parágrafos, ou os dois no mesmo parágrafo, pede a reescrita do trecho.
+- §15 traz três vetos fixos (“crucial”, “em conclusão”, “em síntese”) e a lista de jargão de engenharia a trocar em texto jurídico, acadêmico ou didático.
+- O passo de conferência aplica seis testes: apagar, quem faz o quê, cortar o segundo termo, bordas em sequência, pontuação retórica e voz alta.
+- A skill manda reescrever o bloco inteiro quando o defeito está na estrutura e descreve como corrigir sem trocar um tique por outro.
+- O padrão que se repete pelo texto se corrige até desaparecer; a ocorrência isolada pode ficar, com razão específica.
+- Números antigos e novos: 1 a 5 não mudam; 6→8, 7→9, 8→10, 9→11, 10→12, 11→13, 12→15, 13→16, 14→17, 15→18, 16→19, 17→20, 18→21, 19→22, 20→23, 21→24, 22→25, 23→26, 24→27, 25→28, 26→29.
+
 ## 4.0.0
 
 **Edição PT-BR do fork.** Traduz a skill e a documentação de uso, adapta os 26 padrões com exemplos brasileiros e integra às quatro etapas a menor intervenção necessária à correção completa e a proteção dos termos técnicos e jurídicos do contexto. A versão corresponde à base v4.0.0 de blader.

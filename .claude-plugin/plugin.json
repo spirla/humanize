@@ -1,7 +1,7 @@
 {
   "name": "humanizer",
   "description": "Corrige a prosa em português brasileiro com a menor alteração que resolva o problema por completo.",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": {
     "name": "blader",
     "url": "https://github.com/blader"
