@@ -39,7 +39,7 @@ Use `-l` para instalar somente no projeto atual. `pi update --extensions` atuali
 
 ### Claude.ai e Claude Desktop
 
-Baixe o ZIP do repositório pelo menu **Code → Download ZIP** e importe-o como skill nas configurações.
+Importe nas configurações de skills um ZIP com a pasta `humanizer/`, contendo `SKILL.md`, `fases/` e `scripts/fluxo.py`. O [pacote da versão](https://github.com/spirla/humanize/releases/latest) já tem essa estrutura.
 
 ### Outros agentes
 
@@ -47,7 +47,7 @@ Baixe o ZIP do repositório pelo menu **Code → Download ZIP** e importe-o como
 npx skills add spirla/humanize --global --agent '*'
 ```
 
-Remova `--global` para instalar apenas no projeto atual. Se o instalador não reconhecer o agente, copie o `SKILL.md` para o diretório de skills dele.
+Remova `--global` para instalar apenas no projeto atual. Se o instalador não reconhecer o agente, copie `SKILL.md`, `fases/` e `scripts/fluxo.py` para a pasta `humanizer/` do agente.
 
 ## Uso
 
@@ -65,7 +65,21 @@ Revise este texto em português brasileiro com o Humanizer:
 
 Para calibrar a voz, forneça dois ou três parágrafos de sua autoria e indique qual trecho é a amostra. A skill acompanha escolhas de léxico, ritmo, aberturas, pontuação e transições.
 
-## Como funciona
+## Livros e apostilas
+
+A [ficha inicial](fases/mapa.md) orienta a preparação do mapa de conteúdo. O revisor percorre leitura, diagnóstico, edição, conferência e remontagem nessa ordem. Cada ficha define o que fazer, o que registrar sobre cada capítulo e quando avançar. Em revisão coordenada, cada despacho libera só a fase seguinte. Uma conversa por obra mantém a progressão entre os capítulos.
+
+O controle roda com Python 3.8 ou posterior e a biblioteca padrão. Use caminhos absolutos para a edição e uma pasta de trabalho separada. Depois de preparar o mapa e a lista JSON ordenada de arquivos, inicie a leitura.
+
+```sh
+python3 scripts/fluxo.py livro.sqlite iniciar entradas.json MOC.md
+python3 scripts/fluxo.py livro.sqlite atual
+python3 scripts/fluxo.py livro.sqlite ler
+```
+
+A posição exibida pertence ao texto lido em caracteres. Confirme cada bloco depois de lê-lo na conversa. Os registros editoriais citam o texto e indicam decisões conferíveis. Um hash confirma a versão do arquivo. Ao reabrir um capítulo, o controle preserva os demais e invalida as verificações que dependem da alteração. Sem Python, siga a ficha da mesma fase e mantenha o ponto de retomada no mapa.
+
+## Como funciona em um trecho
 
 1. **Marcar.** Ler a unidade e seu contexto. Localizar os defeitos, as repetições em sequência e os termos técnicos e jurídicos que precisam ficar intactos.
 2. **Corrigir.** Começar pela menor alteração que resolva o defeito. Ampliar a edição se a correção pontual for insuficiente. Reescrever o bloco inteiro quando o defeito estiver na estrutura.

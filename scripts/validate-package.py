@@ -144,4 +144,9 @@ skill_words = len(SKILL.split())
 if skill_words > 5500:
     raise SystemExit(f"Keep SKILL.md at 5,500 words or fewer; it has {skill_words}")
 
+for member in ("scripts/fluxo.py", *(f"fases/{phase}.md" for phase in
+        ("mapa", "leitura", "diagnostico", "edicao", "conferencia", "remontagem", "entrega"))):
+    if not (ROOT / member).is_file():
+        raise SystemExit(f"Missing long-document workflow file: {member}")
+
 print(f"Humanizer package v{skill_version} is valid")

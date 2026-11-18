@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.0
+
+Livros e apostilas passam por fases separadas, com mapa da obra, leitura integral dos capítulos, diagnóstico, edição mínima, conferência local e releitura do conjunto remontado. O controle guarda a posição de leitura e vincula os registros às versões dos arquivos. As séries de aberturas e fechos recebem decisão contextual em cada capítulo. O percurso de quatro passos continua disponível para trechos curtos.
+
 ## 4.1.0
 
 **Regras unificadas e etapa final.** A skill reúne num só catálogo as regras de prosa que antes ficavam espalhadas em guias de gênero e passa a servir de etapa final de todo texto entregue como produto de um projeto. O catálogo vai de 26 para 30 padrões.
