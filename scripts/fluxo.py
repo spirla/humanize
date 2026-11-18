@@ -215,6 +215,14 @@ def series_de_abertura(text):
         if len(rows) >= 3:
             result.append({"abertura": word, "passagens": [
                 {"secao": sec, "inicio": opening} for _, sec, opening in rows]})
+    articles = {"a", "o", "as", "os"}
+    for starts_with_article, group in groupby(passages, key=lambda row: row[0] in articles):
+        if not starts_with_article:
+            continue
+        rows = list(group)
+        if len(rows) >= 3 and len({word for word, _, _ in rows}) > 1:
+            result.append({"abertura": "artigos variados", "passagens": [
+                {"secao": sec, "inicio": opening} for _, sec, opening in rows]})
     return result
 
 
