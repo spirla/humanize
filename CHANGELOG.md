@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.2
+
+O comando de diagnóstico mostra também sequências de três aberturas iguais. A decisão de manter ou editar continua a depender da passagem em contexto.
+
 ## 4.3.1
 
 Ao reabrir a edição de uma unidade, o controle guarda os achados já tratados, as decisões e o hash do candidato em que cada decisão foi registrada. Uma correção posterior pode ser conferida junto com a anterior.
