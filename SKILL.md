@@ -8,7 +8,7 @@ description: |
   Use também como etapa final de todo texto entregue como produto de um projeto.
 license: MIT
 metadata:
-  version: "4.3.0"
+  version: "4.3.1"
 ---
 
 # Humanizer em português brasileiro
