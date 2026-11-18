@@ -119,6 +119,15 @@ class Fluxo(unittest.TestCase):
         self.assertEqual([x["secao"] for x in series[0]["passagens"]],
                          ["Início", "Início", "Aplicação", "Aplicação"])
 
+    def test_tres_aberturas_com_grifo_e_negrito(self):
+        p = self.paths[0]
+        p.write_text("A tipicidade limita o ingresso.\n\n**A tipicidade** dos atos.\n\n"
+                     "==l:A tipicidade== dos títulos.\n\nOutro parágrafo.\n\n"
+                     "Os atos ingressam.\n\nOs títulos seguem.\n")
+        self.cmd("reabrir", "leitura", 1)
+        found = json.loads(self.cmd("aberturas", 1))
+        self.assertEqual([(row["abertura"], len(row["passagens"])) for row in found], [("a", 3)])
+
     def test_batch_findings_survive_reopening_and_block_delivery(self):
         for phase in ("leitura", "diagnostico", "edicao", "conferencia", "remontagem"):
             for number, path in enumerate(self.paths, 1):

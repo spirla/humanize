@@ -212,7 +212,7 @@ def series_de_abertura(text):
     result = []
     for word, group in groupby(passages, key=lambda row: row[0]):
         rows = list(group)
-        if len(rows) >= 4:
+        if len(rows) >= 3:
             result.append({"abertura": word, "passagens": [
                 {"secao": sec, "inicio": opening} for _, sec, opening in rows]})
     return result
