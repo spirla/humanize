@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.0
+
+O leitor pode conferir o bloco com a saída efetivamente exibida. Na ausência desse registro, blocos longos pedem uma passagem do meio e outra do fim. O diagnóstico e a conferência incluem séries que atravessam subtítulos. As pendências entre capítulos sobrevivem à reabertura e impedem a entrega até receberem decisão na edição da unidade atingida. A correção em lote preserva as conferências válidas. Controles 4.2 podem adotar o novo percurso sem reiniciar a obra.
+
 ## 4.2.0
 
 Livros e apostilas passam por fases separadas, com mapa da obra, leitura integral dos capítulos, diagnóstico, edição mínima, conferência local e releitura do conjunto remontado. O controle guarda a posição de leitura e vincula os registros às versões dos arquivos. As séries de aberturas e fechos recebem decisão contextual em cada capítulo. O percurso de quatro passos continua disponível para trechos curtos.

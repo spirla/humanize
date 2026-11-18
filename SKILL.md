@@ -8,7 +8,7 @@ description: |
   Use também como etapa final de todo texto entregue como produto de um projeto.
 license: MIT
 metadata:
-  version: "4.2.0"
+  version: "4.3.0"
 ---
 
 # Humanizer em português brasileiro
@@ -27,7 +27,7 @@ Para um trecho ou arquivo curto, execute os quatro passos abaixo. Para livro, ap
 
 **Obra longa.** A sequência é mapa, leitura integral, diagnóstico, edição, conferência, remontagem e entrega. Abra apenas a ficha da fase atual. Leia cada capítulo desde a primeira até a última passagem, com saídas completas no contexto. Em cada fase, percorra as unidades na ordem do mapa. Mantenha uma versão identificável da entrada, do candidato e da fase aceita. O material de trabalho fica fora da edição entregue.
 
-Se houver sistema de arquivos e Python, use [o controle de fases](scripts/fluxo.py). O comando `atual` identifica capítulo e ficha. `avancar FASE` exige os registros de todas as unidades. Em outro ambiente, reproduza a ordem e os mesmos critérios no mapa da conversa. Se faltar parte do texto, indique a lacuna e retome dela quando a entrada estiver disponível.
+Se houver sistema de arquivos e Python, use [o controle de fases](scripts/fluxo.py). O comando `atual` identifica capítulo e ficha. `avancar FASE` exige os registros de todas as unidades. Em outro ambiente, reproduza a ordem e os mesmos critérios no mapa da conversa. Se um bloco chegar incompleto, preserve a posição e leia uma faixa menor. Na conferência e na remontagem, registre as pendências por unidade enquanto avança. Agrupe as correções antes de liberar a próxima fase.
 
 Na revisão orquestrada, cada despacho abrange uma única fase de uma única obra. Ao encerrar a fase, a coordenação confronta uma decisão com o trecho a que ela se refere e libera a próxima. Em execução contínua, faça a mesma verificação entre as fases, sem exigir uma mensagem do usuário. Se o contexto for interrompido, reabra a ficha e os trechos necessários. O registro de cobertura permite localizar a retomada. A qualidade se decide pela leitura e pelo confronto com o texto.
 
