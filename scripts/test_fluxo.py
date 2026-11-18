@@ -128,6 +128,17 @@ class Fluxo(unittest.TestCase):
         found = json.loads(self.cmd("aberturas", 1))
         self.assertEqual([(row["abertura"], len(row["passagens"])) for row in found], [("a", 3)])
 
+    def test_mixed_articles_and_repeated_word_within_run(self):
+        self.paths[0].write_text("A sala abriu.\n\nA equipe chegou.\n\nA diretora entrou.\n\n"
+                                 "> A fala citada.\n\n## Segunda parte\n\nO público entrou.\n\n"
+                                 "**As mesas** ficaram livres.\n\nDepois começou a reunião.\n\n"
+                                 "Os alunos ficaram.\n\nO dia terminou.\n")
+        self.cmd("reabrir", "leitura", 1)
+        found = json.loads(self.cmd("aberturas", 1))
+        self.assertEqual([(r["abertura"], len(r["passagens"])) for r in found],
+                         [("a", 3), ("artigos variados", 5)])
+        self.assertEqual(found[1]["passagens"][-1]["secao"], "Segunda parte")
+
     def test_batch_findings_survive_reopening_and_block_delivery(self):
         for phase in ("leitura", "diagnostico", "edicao", "conferencia", "remontagem"):
             for number, path in enumerate(self.paths, 1):

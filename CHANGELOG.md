@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.3
+
+O diagnóstico também localiza séries em que os parágrafos alternam “a”, “o”, “as” e “os”. A conferência compara a função dos parágrafos, inclusive antes e depois de uma citação.
+
 ## 4.3.2
 
 O comando de diagnóstico mostra também sequências de três aberturas iguais. A decisão de manter ou editar continua a depender da passagem em contexto.
