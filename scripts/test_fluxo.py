@@ -140,6 +140,18 @@ class Fluxo(unittest.TestCase):
         for n, path in enumerate(self.paths, 1):
             self.record("edicao", n, path, "--candidato", path, resolucoes={str(n): "A passagem foi cotejada e a hipótese está expressa."})
         self.cmd("avancar", "edicao")
+        previous = json.loads(self.cmd("notas", 1))["notas"]["edicao"]
+        self.cmd("reabrir", "edicao", 1)
+        self.record("edicao", 1, self.paths[0], "--candidato", self.paths[0])
+        unit = json.loads(self.cmd("notas", 1))
+        self.assertEqual(unit["resolucoes_anteriores"]["1"], {
+            "achado": previous["achados_tratados"]["1"],
+            "decisao": previous["parecer"]["resolucoes"]["1"],
+            "sha256": previous["sha256"],
+        })
+        self.assertNotIn("2", unit["resolucoes_anteriores"])
+        self.assertNotIn("pendencias", json.loads(self.cmd("atual")))
+        self.cmd("avancar", "edicao")
         for phase in ("conferencia", "remontagem"):
             for n, path in enumerate(self.paths, 1):
                 self.read_all(path)

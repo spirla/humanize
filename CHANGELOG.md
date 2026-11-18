@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1
+
+Ao reabrir a edição de uma unidade, o controle guarda os achados já tratados, as decisões e o hash do candidato em que cada decisão foi registrada. Uma correção posterior pode ser conferida junto com a anterior.
+
 ## 4.3.0
 
 O leitor pode conferir o bloco com a saída efetivamente exibida. Na ausência desse registro, blocos longos pedem uma passagem do meio e outra do fim. O diagnóstico e a conferência incluem séries que atravessam subtítulos. As pendências entre capítulos sobrevivem à reabertura e impedem a entrega até receberem decisão na edição da unidade atingida. A correção em lote preserva as conferências válidas. Controles 4.2 podem adotar o novo percurso sem reiniciar a obra.

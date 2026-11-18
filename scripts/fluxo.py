@@ -127,7 +127,15 @@ def reopen(book, phase, number):
     else:
         original(unit)
     for later in STAGES[STAGES.index(phase):]:
-        unit["notas"].pop(later, None)
+        previous = unit["notas"].pop(later, None)
+        if later == "edicao" and previous and previous.get("achados_tratados"):
+            history = unit.setdefault("resolucoes_anteriores", {})
+            for key, issue in previous["achados_tratados"].items():
+                history[key] = {
+                    "achado": issue,
+                    "decisao": previous["parecer"]["resolucoes"][key],
+                    "sha256": previous["sha256"],
+                }
     # Uma mudança local também pode afetar retomadas distantes no livro.
     if STAGES.index(phase) <= STAGES.index("edicao"):
         for other in book["unidades"]:
