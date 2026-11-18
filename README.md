@@ -79,6 +79,8 @@ python3 scripts/fluxo.py livro.sqlite ler
 
 A posição exibida pertence ao texto lido em caracteres. Confirme cada bloco depois de lê-lo na conversa. Os registros editoriais citam o texto e indicam decisões conferíveis. Um hash confirma a versão do arquivo. Ao reabrir um capítulo, o controle preserva os demais e invalida as verificações que dependem da alteração. Sem Python, siga a ficha da mesma fase e mantenha o ponto de retomada no mapa.
 
+O comando `aberturas NUMERO` mostra séries na prosa, inclusive entre subtítulos. `atual` lista as pendências que impedem o avanço. Use `reabrir edicao 2 5` para tratar em conjunto os achados das unidades 2 e 5. Cada correção passa pela conferência do candidato e pela leitura final da obra. Ao retomar uma obra iniciada na versão 4.2, execute `atualizar` entre dois blocos ou fases. Os registros aceitos e a posição de leitura são mantidos. Confira os pareceres anteriores que apontaram problemas e reabra as unidades atingidas. O controle antigo guardava essas indicações como texto livre. Para um bloco emitido antes da atualização e ainda sem confirmação, rode `ler` novamente.
+
 ## Como funciona em um trecho
 
 1. **Marcar.** Ler a unidade e seu contexto. Localizar os defeitos, as repetições em sequência e os termos técnicos e jurídicos que precisam ficar intactos.
